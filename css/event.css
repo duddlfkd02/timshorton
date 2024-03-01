@@ -1,0 +1,426 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mont');
+
+*{margin:0; padding:0;
+    list-style: none;
+    box-sizing: border-box;}
+
+body{background-color: #ffffff;
+    color:#000000;
+    font-family: 'Noto Sans KR', sans-serif;}
+
+a{text-decoration: none;
+    color:inherit;}
+
+.clearfix::after{display: block; content: ""; clear: both;}
+
+.wrap{width:100%;}
+
+header{width:100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    position: fixed;
+    z-index: 2;
+    background-color: #c8102f;}
+
+.logo{width:10%;
+line-height: 80px;}
+
+.logo img{width:100%;
+    margin-left:40px;}
+
+nav{width:50%;
+font-size: 18px;
+font-family: 'Mont', sans-serif;
+font-weight: 900;}
+
+nav > ul{width:100%;}
+
+nav > ul > li{position:relative;
+        float:left;
+        width:20%;
+        color: #ffffff;
+        text-align: center;
+        line-height: 80px;}
+
+nav > ul > li:hover .navicon img{opacity: 1;
+                            transition:0.4s;}
+
+.navicon img{width:15px;
+        height:15px;
+        top:20px;
+        right:22%;
+        position: absolute;
+        opacity: 0;}
+
+.submenu{line-height: 35px;
+    height: 200px;
+    font-size:15px;
+    font-weight: 400;
+    background-color: #c8102f;
+    display: none;}
+
+.submenu li{cursor: pointer;}
+
+.burger{position:relative;
+    width:25px;
+    height:16px;
+    cursor: pointer;
+    display: none;}
+
+.line{position:absolute;
+    width:100%;
+    height:3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    left:0;
+    transition:0.2s;}
+
+.line:first-child{top:0;}
+.line:nth-child(2),.line:nth-child(3){top:50%;}
+.line:nth-child(4){top:100%;}
+
+.burger.active span:nth-child(1),
+.burger.active span:nth-child(4){
+    opacity: 0;}
+
+.burger.active span:nth-child(2){
+    transform: rotate(45deg);}
+
+.burger.active span:nth-child(3){
+    transform: rotate(-45deg);}
+
+
+
+
+
+/*------main-----*/
+
+.main{width:100%;
+    height:500px;
+    background-image: url(../image/images5/main.png);
+    background-size: cover;
+    background-position-y: 90%;}
+
+
+.title{width:100%;
+        margin:0 auto;}
+
+.title h3{width:100%;
+            margin-top:40px;
+            font-weight: 900;
+            font-family: 'Mont', sans-serif;
+            color:#c8102f;
+            text-align: center;
+            font-size: 35px;}
+
+.title p{text-align: center;}
+
+
+
+.btn{width:100%;
+    margin:40px auto ;}
+
+
+.btn ul{width:90%;
+        margin:0 auto;
+        padding-bottom:50px;
+        border-bottom:2px solid #c8102f;}
+
+.btn ul li{float: left;
+            width:30%;
+            height:60px;
+            margin-left:5%;
+            background-color: #FFC648;
+            border:1px solid #FFC648;
+            font-weight: 500;
+            text-align: center;
+            line-height: 60px;
+            position: relative;
+            cursor: pointer;}
+
+.btn ul li:nth-child(1){margin-left:0;}
+
+
+.btn ul li:nth-child(2),.btn ul li:nth-child(3){
+                    background-color: #ffffff;}
+
+
+.btn ul li span{width:20px;
+                height:20px;
+                background-color: #FFC648;
+                display: block;
+                position:absolute;
+                top:50px;
+                left:48%;
+                transform: rotate(45deg);
+                display: none;}
+
+.btn ul li:nth-child(1) span{display:block;}
+
+
+
+.image1{background-image: url(../image/images5/retropack.jpeg);}
+.image2{background-image: url(../image/images5/timspack.jpeg);}
+.image3{background-image: url(../image/images5/app_event.jpeg);}
+
+.content{width:100%;
+        margin:100px auto;
+        visibility: hidden;}
+
+.imgbox{width:100%;
+        height:400px;
+        background-size: cover;
+        background-position: center;}
+
+.content ul{width:90%;
+            margin:0 auto;}
+
+.content ul li{float: left;
+                width:30%;
+                margin-left:5%;
+                border: 1px solid #dddddd;
+                cursor: pointer;}
+
+.content ul li:nth-child(1){margin-left:0;}
+
+.content ul li:hover{border: 1px solid #c8102f;
+                    transition: 0.3s;
+                    background-color: #FFC648;}
+
+.content ul li:hover span{color:#000000;}
+
+.textbox{padding:20px 10px;}
+
+.textbox p{color:#c8102f;
+            font-weight: 500;}
+
+.textbox span{color: #cbcbcb;
+            font-size: 14px;}
+
+.textbox img{width:50px;
+            height:50px;
+            float: right;
+            margin-top:-45px;}
+
+/*------footer 구간-----*/
+
+footer{width:100%;
+    background-color: #c8102f;
+    padding-top:20px;
+    margin:0 auto;
+    text-align: center;
+    color:#ffffff;}
+    
+.box1 img{width:150px;}
+
+
+.box2 ul{width:30%;
+    margin:10px auto;
+    display: flex;
+    justify-content: space-around;}
+
+.box3{width:100%;
+font-size: 14px;}
+
+.box4{margin:10px;}
+
+.box4 img{width:30px;
+    height:30px;}
+
+.box5{background-color: #E4D2A9;
+    height: 40px;
+    line-height: 40px;
+    color:#c8102f;
+    padding:0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-family: 'Mont', sans-serif;}
+
+.site{width:110px;
+        height:20px;
+        margin-top:10px;
+        text-align: center;
+        appearance: none;
+        background-size: 15px;
+        border:1px solid #c8102f;
+        border-radius: 5px;
+        background-color: #E4D2A9;
+        color:#c8102f;
+        font-weight: 900;
+        font-family: 'Mont', sans-serif;
+        outline: none;}
+
+
+
+.site option {appearance: none;
+        outline: none;
+        background: #E4D2A9;
+        color: #c8102f;
+        border:none;
+        font-weight: 900;
+        font-family: 'Mont', sans-serif;
+        padding: 3px 0;}
+
+
+/*=====반응형구간=====*/
+
+@media only screen and (max-width:1399px) and (min-width:1024px){
+    .navicon img{width:15px;
+            height:15px;
+            top:20px;
+            right:8%;}
+
+    .submenu li{font-size:14px;}
+
+
+}/*1399-1024구간 끝*/
+
+
+@media only screen and (max-width:1023px) and (min-width:700px){
+    
+    .burger{display: block;
+            z-index: 4;
+            position:absolute;
+            top:32px;
+            right:10px;} 
+    
+    header{display: block;}
+    
+    
+    .logo{width:120px;}
+        
+    nav{font-size: 14px;
+            width:100%;
+            display: none;}
+        
+    nav > ul{width:100%;}
+    
+    nav > ul > li{font-size: 16px;
+                    margin-left:0;
+                    float:none;
+                    width:100%;
+                    color:#ffffff;
+                    background-color: #c8102f;
+                    text-align:center;
+                    line-height: 50px;}
+    
+    .submenu{line-height: 30px;
+            height: auto;
+            font-size:12px;
+            font-weight: 400;
+            background-color: #c8102f;
+            display: none;}
+    
+    .submenu li{display: none;}
+    
+    .navicon{display: none;}
+
+/*-----이벤트 콘텐츠 구간-----*/
+
+.content ul{width:96%;}
+
+.content ul li{float: left;
+    width:48%;
+    margin:10px auto;
+    margin-left:4%;}
+
+.content ul li:nth-child(2n+1){margin-left:0;}
+
+
+/*----footer 구간----*/
+
+.box2 ul{width:40%;}
+.box2 ul li{font-size:14px;}
+.box3{font-size:12px;}
+.box5{font-size:14px;}
+
+}/*1023-700구간 끝*/
+
+@media only screen and (max-width:699px){
+
+    .burger{display: block;
+        z-index: 4;
+        position:absolute;
+        top:32px;
+        right:10px;} 
+
+    header{display: block;}
+
+
+    .logo{width:120px;}
+        
+    nav{font-size: 14px;
+            width:100%;
+            display: none;}
+        
+    nav > ul{width:100%;}
+
+    nav > ul > li{font-size: 16px;
+                    margin-left:0;
+                    float:none;
+                    width:100%;
+                    color:#ffffff;
+                    background-color: #c8102f;
+                    text-align:center;
+                    line-height: 50px;}
+
+    .submenu{line-height: 30px;
+            height: auto;
+            font-size:12px;
+            font-weight: 400;
+            background-color: #c8102f;
+            display: none;}
+
+    .submenu li{display: none;}
+
+    .navicon{display: none;}
+
+    
+    .btn ul li span{left:45%;}
+
+/*----content 구간----*/
+
+.content{margin:50px auto;}
+
+.content ul{width:85%;
+    margin:0 auto;}
+
+.content ul li{float: none;
+        width:100%;
+        margin-left:0;
+        margin:20px auto;}
+
+/*----footer----*/
+    .box2 ul{width:60%;}
+    .box2 ul li{font-size:14px;
+            padding:1px;}
+    .box3{font-size:12px;
+            width:80%;
+            margin:20px auto;}
+    .box5{font-size:14px;}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

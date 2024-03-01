@@ -1,0 +1,695 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mont');
+
+*{margin:0; padding:0;
+    list-style: none;
+    box-sizing: border-box;}
+
+body{background-color:#ffffff;
+    color:#000000;
+    font-family: 'Noto Sans KR', sans-serif;}
+
+a{text-decoration: none;
+    color:inherit;}
+
+.clearfix::after{display:block; content:""; clear:both;}
+
+
+.wrap{width:100%;}
+
+header{width:100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    position: fixed;
+    z-index: 2;
+    background-color: #c8102f;}
+
+.logo{width:10%;
+        line-height: 80px;}
+
+.logo img{width:100%;
+        margin-left:40px;}
+
+nav{width:50%;
+    font-size: 18px;
+    font-family: 'Mont', sans-serif;
+    font-weight: 900;}
+
+nav > ul{width:100%;}
+
+nav > ul > li{position:relative;
+        float:left;
+        width:20%;
+        color:#ffffff;
+        text-align: center;
+        line-height: 80px;}
+
+nav > ul > li:hover .navicon img{opacity: 1;
+                                transition:0.4s;}
+
+.navicon img{width:15px;
+            height:15px;
+            top:20px;
+            right:20px;
+            position: absolute;
+            opacity: 0;}
+
+.submenu{line-height: 35px;
+        height: 200px;
+        font-size:15px;
+        font-weight: 400;
+        background-color: #c8102f;
+        display: none;}
+
+.submenu li{cursor: pointer;}
+
+.burger{position:relative;
+    width:25px;
+    height:16px;
+    cursor: pointer;
+    display: none;}
+
+.line{position:absolute;
+    width:100%;
+    height:3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    left:0;
+    transition:0.2s;}
+
+.line:first-child{top:0;}
+.line:nth-child(2),.line:nth-child(3){top:50%;}
+.line:nth-child(4){top:100%;}
+
+.burger.active span:nth-child(1),
+.burger.active span:nth-child(4){
+    opacity: 0;}
+
+
+.burger.active span:nth-child(2){
+    transform: rotate(45deg);}
+
+.burger.active span:nth-child(3){
+    transform: rotate(-45deg);}
+
+
+/*-----detail(상품정보) 구간-----*/
+
+.content1{width:96%;
+            margin:0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top:120px;}
+
+.detail_image{width:42%;}
+
+.detail_back{margin-top:200px;
+            margin-left:30px;}
+
+.detail_front{margin-top:-360px;;
+            margin-left:115px;}
+
+.detail_back img{width:230px;}
+.detail_front img{width:500px;}
+
+
+.title_wrap{width:54%;
+            padding-top:100px;}
+
+
+
+.detail_title span{font-family: 'Mont', sans-serif;
+                    font-weight: 900;
+                    display: inline-block;
+                    width:50px;
+                    height:25px;
+                    padding:5px;
+                    font-size:14px;
+                    text-align: center;
+                    border-radius: 5px;
+                    color:#ffffff;
+                    background-color: #c8102f;}
+
+.detail_title h2{font-family: 'Mont', sans-serif;
+                font-weight: 900;
+                margin-top: 5px;
+                color:#c8102f;
+                font-size:40px;}
+
+
+.detail_title p{letter-spacing: -1px;}
+
+.info{width:90%;
+        margin:30px 0;
+        font-size:14px;
+        color:#b3b3b3;}
+
+
+.info > div > ul{width:100%;}
+
+.info > div > ul > li {float: left;
+                            width:48%;
+                            margin-left:2%;}
+                            
+.info > div > ul > li:nth-child(1){margin-left:0;}
+
+.info > div > ul > li > span{display: block;
+                                width:10px;
+                                height:10px;
+                                border-top:1px solid #b3b3b3;
+                                border-right:1px solid #b3b3b3;
+                                float: right;
+                                transform: rotate(135deg);
+                                transition-duration: 0.7s;
+                                cursor: pointer;}
+
+
+.sub_info{width:100%;
+        border-top:1px solid #b3b3b3;
+        display: none;}
+
+.sub_info li{float:left;
+                width:48%;
+                padding-top:5px;
+                margin-left:2%;}
+
+.sub_info li:nth-child(2n+1){margin-left:0;}
+
+.detail_info p{font-size:16px;
+                line-height:40px;
+                border-bottom:1px solid #b3b3b3;}
+
+/*-----content2 추천 구간-----*/
+.content2{width:100%;
+        padding-bottom:100px;
+        background-color: #FAF4E7;
+        animation-delay: 0.5s;}
+
+.content2_title{padding-top: 40px;
+                    margin-left: 3.5%;}
+
+.content2_title h3{font-size:20px;
+                    font-weight:300;}
+
+.content2_title img{width:80px;}
+
+
+.content2 ul{width:93%;
+            padding:50px 0;
+            margin:0 auto;}
+
+.content2 ul li{float: left;
+                width:31%;
+                height:600px;
+                text-align: center;
+                margin-left:3.5%;
+                background-color: #ffffff;}
+
+.content2 ul li:nth-child(1){margin-left:0;}
+
+.content2 ul li div{width:350px;
+                    height:350px;
+                    margin:30px auto;} 
+
+.content2 > ul > li img{width:100%;}
+
+.content2 > ul > li img:hover{transform: scale(1.1);
+                            transition: 0.2s;}
+
+
+.content2 > ul > li p{font-family: 'Mont', sans-serif;
+                    font-weight: 900;
+                    color:#c8102f;
+                    font-size:18px;
+                    margin-top:100px;}
+
+
+/*-----content3구간-----*/
+
+.content3{width:93%;
+            margin: 50px auto;
+            display: flex;
+            justify-content:space-between;
+            border-top:1px solid #dddddd;}
+
+
+
+.suggest{width:25%;
+        margin-top:50px;
+        padding:20px 0;
+        position:relative;
+        border-bottom:1px solid #c8102f;}
+
+
+.suggest div{position:absolute;
+            right:10px;
+            top:20px;}
+
+
+.suggest p{width:60%;
+            font-family: 'Mont', sans-serif;
+            font-weight: 900;
+            color:#c8102f;
+            font-size:22px;}
+
+
+.suggest img{width:60px;
+            cursor: pointer;}
+
+.suggest img:hover{opacity: 0.5;
+                    transform: scale(1.1);
+                    transition: 0.3s;}
+
+/*-----메뉴 버튼-----*/
+
+.menubtn{width:100%;
+        text-align: center;
+        margin:100px auto;}
+
+.menubtn p{width:180px;
+            height:50px;
+            padding:15px;
+            margin: auto;
+            border-radius: 30px;
+            font-family: 'Mont', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            color:#ffffff;
+            background-color: #c8102f;
+            cursor: pointer;}
+
+
+.menubtn p:hover{background-color: #ffc8d1;
+                color:#c8102f;}
+
+
+
+
+
+
+/*------footer 구간-----*/
+
+footer{width:100%;
+    background-color: #c8102f;
+    padding-top:20px;
+    margin:0 auto;
+    text-align: center;
+    color:#ffffff;}
+    
+.box1 img{width:150px;}
+
+
+.box2 ul{width:30%;
+    margin:10px auto;
+    display: flex;
+    justify-content: space-around;}
+
+.box3{width:100%;
+    font-size: 14px;}
+
+.box4{margin:10px;}
+
+.box4 img{width:30px;
+    height:30px;}
+
+.box5{background-color: #E4D2A9;
+height: 40px;
+line-height: 40px;
+color:#c8102f;
+padding:0 20px;
+display: flex;
+justify-content: space-between;
+font-weight: 900;
+font-family: 'Mont', sans-serif;}
+
+
+.site{width:110px;
+    height:20px;
+    margin-top:10px;
+    text-align: center;
+    appearance: none;
+    background-size: 15px;
+    border:1px solid #c8102f;
+    border-radius: 5px;
+    background-color: #E4D2A9;
+    color:#c8102f;
+    font-weight: 900;
+    font-family: 'Mont', sans-serif;
+    outline: none;
+    cursor: pointer;}
+
+
+
+.site option {appearance: none;
+    outline: none;
+    background: #E4D2A9;
+    color: #c8102f;
+    border:none;
+    font-weight: 900;
+    font-family: 'Mont', sans-serif;
+    padding: 3px 0;
+    cursor: pointer;}
+
+/*=====반응형구간=====*/
+
+@media only screen and (max-width:1399px) and (min-width:1024px){
+    .navicon img{width:15px;
+            height:15px;
+            top:20px;
+            right:8%;}
+
+    .submenu li{font-size:14px;}
+
+/*-----detail(상품정보) 구간-----*/
+
+.content1{width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top:120px;}
+
+
+.detail_back{margin-top: 100px;
+            margin-left: 15%;}
+
+.detail_front{margin-top: -374px;
+                margin-left: 28%;}
+
+.detail_back img{width:250px;}
+.detail_front img{width:450px;}
+
+
+.title_wrap{width:50%;
+            padding-top:100px;}
+
+.sub_info ul li {margin-bottom:20px;}
+/*-----content2 추천 구간-----*/
+.content2 ul li{height:400px;}
+
+.content2 ul li div{width:300px;
+                    height:300px;
+                    margin:15px auto;}
+
+.content2 > ul > li p{margin-top:0;}
+
+/*-----content3구간-----*/
+
+.suggest p{font-size: 18px;}
+.suggest span{width:14px;}
+
+/*-----메뉴 버튼-----*/
+
+.menubtn{width:100%;
+    text-align: center;
+    margin:70px auto;}
+}/*1399-1024구간 끝*/
+
+
+
+@media only screen and (max-width:1023px) and (min-width:700px){
+
+    .burger{display: block;
+            z-index: 4;
+            position:absolute;
+            top:32px;
+            right:10px;} 
+
+        header{display: block;}
+
+
+        .logo{width:120px;}
+            
+        nav{font-size: 14px;
+                width:100%;
+                display: none;}
+            
+        nav > ul{width:100%;}
+        
+        nav > ul > li{font-size: 16px;
+                        margin-left:0;
+                        float:none;
+                        width:100%;
+                        color:#ffffff;
+                        background-color: #c8102f;
+                        text-align:center;
+                        line-height: 50px;}
+
+        .submenu{line-height: 30px;
+                height: auto;
+                font-size:12px;
+                font-weight: 400;
+                background-color: #c8102f;
+                display: none;}
+
+        .submenu li{display: none;}
+
+        .navicon{display: none;}
+
+/*-----detail(상품정보) 구간-----*/
+
+        .content1{width:100%;
+            margin:0 auto;
+            display: block;
+            padding-top:120px;}
+
+        .detail_image{width:100%;
+                        margin:0 auto;}
+
+        .detail_back{margin-top:100px;
+                    margin-left:30%;}
+    
+        .detail_front{margin-top: -300px;
+                        margin-left: 40%;}
+        
+        .detail_back img{width:200px;}
+
+        .detail_front img{width:350px;}
+
+        .title_wrap{width:100%;
+                margin-bottom: 30px;
+                text-align: center;
+                padding-top:0px;}
+
+
+        .detail_title h2{font-size:32px;} 
+
+
+        .sub_info{border:none;
+                    width:80%;
+                    margin:0 auto;}
+/*----content2----*/
+
+    .content2{padding-bottom:40px;}
+
+    .content2_title{text-align: center;
+                    padding-top: 15px;}
+
+    .content2 ul{width:90%;
+                    padding:0;
+                    margin:0 auto;}
+        
+    .content2 ul li{float: none;
+                    width:350px;
+                    height:350px;
+                    margin:0 auto;}
+
+    .content2 ul li:nth-child(1){margin-left:auto;} 
+
+    .content2 ul li div{width:250px;
+                        height:250px;
+                        margin:30px auto;} 
+
+    .content2 > ul > li p{margin-top:0;}
+
+/*-----content3구간-----*/
+
+.content3{width:70%;
+    margin: 50px auto;
+    display: block;
+    border-top:none;}
+
+
+.suggest{width:100%;
+        margin-top:50px;
+        padding:20px 0;
+        position:relative;
+        border-bottom:1px solid #c8102f;}
+
+
+.suggest p{font-size: 18px;}
+.suggest span{width:14px;}
+
+/*-----메뉴 버튼-----*/
+
+.menubtn{width:100%;
+    text-align: center;
+    margin:70px auto;}
+
+/*footer*/
+
+.box2 ul{width:40%;}
+.box2 ul li{font-size:14px;}
+.box3{font-size:12px;}
+.box5{font-size:14px;}
+
+
+
+
+}/*1023-700구간 끝*/
+
+@media only screen and (max-width:699px){
+
+    .burger{display: block;
+        z-index: 4;
+        position:absolute;
+        top:32px;
+        right:10px;} 
+
+    header{display: block;}
+
+
+    .logo{width:120px;}
+        
+    nav{font-size: 14px;
+            width:100%;
+            display: none;}
+        
+    nav > ul{width:100%;}
+
+    nav > ul > li{font-size: 16px;
+                    margin-left:0;
+                    float:none;
+                    width:100%;
+                    color:#ffffff;
+                    background-color: #c8102f;
+                    text-align:center;
+                    line-height: 50px;}
+
+    .submenu{line-height: 30px;
+            height: auto;
+            font-size:12px;
+            font-weight: 400;
+            background-color: #c8102f;
+            display: none;}
+
+    .submenu li{display: none;}
+
+    .navicon{display: none;}
+
+/*-----detail(상품정보) 구간-----*/
+
+.content1{width:100%;
+        margin:0 auto;
+        display: block;
+        padding-top:120px;}
+
+.detail_image{width:100%;
+                margin:0 auto;}
+
+
+.detail_back{margin-top:100px;
+            margin-left:20%;}
+
+.detail_front{margin-top: -260px;
+                margin-left: 28%;}
+
+.detail_back img{width:150px;}
+
+.detail_front img{width:310px;}
+
+.title_wrap{width:100%;
+        margin:0 auto;
+        text-align: center;
+        padding-top:0px;}
+
+
+.detail_title h2{font-size:24px;
+                width:100%;
+                margin:5px auto;}
+
+.detail_title p{font-size:14px;}
+
+
+.info{width:100%;
+    margin:30px auto;}
+
+.sub_info{font-size: 12px;
+        border:none;}
+
+
+
+
+
+/*----content2----*/
+
+.content2_title{text-align: center;
+                padding-top:10px;}
+.content2_title h3{font-size:18px;}
+.content2_title img {width: 60px;}
+
+.content2{padding-bottom: 20px;}
+
+.content2 ul{width:90%;
+            padding-top:0;
+            margin:0 auto;}
+
+.content2 ul li{float: none;
+                width:300px;
+                height:300px;
+                margin:0 auto;}
+
+.content2 ul li:nth-child(1){margin-left:auto;}
+
+
+.content2 ul li div{width:220px;
+                height:220px;
+                margin:30px auto;} 
+
+.content2 > ul > li p{margin-top:0;
+                    font-size: 16px;}
+
+.content2 > ul > li span{font-size: 14px;}
+
+/*-----content3구간-----*/
+
+.content3{width:70%;
+    margin: 50px auto;
+    display: block;
+    border-top:none;}
+
+
+.suggest{width:100%;
+        margin-top:50px;
+        padding:20px 0;
+        position:relative;
+        border-bottom:1px solid #c8102f;}
+
+
+.suggest p{font-size: 18px;}
+.suggest span{width:14px;}
+
+/*-----메뉴 버튼-----*/
+
+.menubtn{width:100%;
+        text-align: center;
+        margin:70px auto;}
+
+.menubtn p{width:140px;
+            height:40px;
+            padding:12px;
+            font-size: 16px;}
+
+/*----footer----*/
+.box2 ul{width:60%;}
+.box2 ul li{font-size:14px;
+        padding:1px;}
+.box3{font-size:12px;
+        width:80%;
+        margin:20px auto;}
+.box5{font-size:14px;}
+
+
+}

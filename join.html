@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/join.js"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <h1><a href="./index.html"><img src="image/images7/logo_R.png" alt="팀홀튼 로고 이미지"></a></h1>
+            </div>
+        </header>
+        
+
+        <section>
+            <article>
+                <form action="#" method="post" name="timsform">
+                    <fieldset class="content1">
+                        <legend></legend>
+                        <h3>WELCOME!</h3>
+                        <div>
+                            <label for="id">아이디: </label>
+                            <input id="id" type="text" name="userid" maxlength="12">
+                            <button id="idcheck">중복확인</button>
+                            <p id="display"></p>
+                        </div>
+
+                        <div>
+                            <label for="password">비밀번호: </label>
+                            <input id="password" type="password" name="userpassword">
+                        </div>
+
+                        <div>
+                            <label for="confirmPassword">비밀번호 재확인: </label>
+                            <input id="confirmPassword" type="password" name="confirmPassword">
+                        </div>
+
+                        <div>
+                            <label for="username">이름: </label>
+                            <input id="username" type="text" name="username">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="content2">
+                        <legend></legend>
+                        <p>
+                            <span>전화번호를 입력해주세요.</span><br>
+                            <select name="areanum" id="areanum">
+                                <option value="" selected="selected">선택</option>
+                                <option value="02">02</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                            </select>
+                            <input type="text" name="phone1" size="4" maxlength="4" id="number1">
+                            <input type="text" name="phone2" size="4" maxlength="4" id="number2">
+                        </p>
+              
+                    </fieldset>
+
+                    <div class="btn">
+                        <button type="submit" onclick="check()" id="submit">
+                            <span>SUBMIT</span>
+                        </button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </div><!--wrap-->
+    
+</body>
+</html>
