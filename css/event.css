@@ -380,13 +380,18 @@ font-size: 14px;}
 
     .navicon{display: none;}
 
-    
+    .btn ul li{font-size: 14px;}
     .btn ul li span{left:45%;}
+
+    .main{height:350px;}
+
 
 /*----content 구간----*/
 
 .content{margin:50px auto;}
 
+.title h3{font-size:24px;}
+.title p{font-size: 16px;}
 .content ul{width:85%;
     margin:0 auto;}
 
@@ -402,7 +407,11 @@ font-size: 14px;}
     .box3{font-size:12px;
             width:80%;
             margin:20px auto;}
-    .box5{font-size:14px;}
+    .box5{font-size:12px;}
+
+    .box5 > span{margin:0 auto;}
+    
+    select{display: none;}
 
 
 

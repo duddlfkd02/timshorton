@@ -593,12 +593,12 @@ font-family: 'Mont', sans-serif;}
 .detail_back{margin-top:100px;
             margin-left:20%;}
 
-.detail_front{margin-top: -260px;
+.detail_front{margin-top: -240px;
                 margin-left: 28%;}
 
 .detail_back img{width:150px;}
 
-.detail_front img{width:310px;}
+.detail_front img{width:280px;}
 
 .title_wrap{width:100%;
         margin:0 auto;
@@ -606,7 +606,11 @@ font-family: 'Mont', sans-serif;}
         padding-top:0px;}
 
 
-.detail_title h2{font-size:24px;
+.detail_title span {width: 40px;
+                padding: 6px;
+                font-size: 12px;}
+
+.detail_title h2{font-size:22px;
                 width:100%;
                 margin:5px auto;}
 
@@ -619,7 +623,10 @@ font-family: 'Mont', sans-serif;}
 .sub_info{font-size: 12px;
         border:none;}
 
+.sub_info li{float: none;
+        width:100%;}
 
+.sub_info li{margin-left:0;}
 
 
 
@@ -689,7 +696,11 @@ font-family: 'Mont', sans-serif;}
 .box3{font-size:12px;
         width:80%;
         margin:20px auto;}
-.box5{font-size:14px;}
+.box5{font-size:12px;}
+
+.box5 > span{margin:0 auto;}
+
+select{display: none;}
 
 
 }

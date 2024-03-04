@@ -17,7 +17,7 @@ $(document).ready(function(){
     /*----메인 이미지 페이드인, 아웃 구간----*/
     setInterval(function(){
         $('.main').animate({"opacity":"0"},2000,function(){
-            $(".main").css({"background-image":"url(image/images2/main2.jpeg)"})
+            $(".main").css({"background-image":"url(image/images2/main3.jpeg)"})
         }).animate({"opacity":"1"},3500).animate({"opacity":"0"},3500,function(){
             $(".main").css({"background-image":"url(image/images2/main.webp)"})
         }).animate({"opacity":"1"},3500);

@@ -473,13 +473,14 @@ nav > ul > li{font-size: 16px;
 
 /*----main 구간----*/
 .main{background-size: cover;
-    background-position: center;}
+    background-position: center;
+    height:350px;}
 
 
 /*----content1 구간----*/
 
 .content1_img{width:100%;
-            height:300px;}
+            height:250px;}
 
 .content1_text{position:static;
                 padding:20px;
@@ -508,7 +509,7 @@ nav > ul > li{font-size: 16px;
 .content2_text{margin: -20px auto;}
 
 .content2_text h3{font-size: 24px;
-                margin:15px 0;}
+                padding:50px 0 40px;}
 
 .content2_text p{font-size: 20px;}
 
@@ -519,7 +520,7 @@ nav > ul > li{font-size: 16px;
          padding:30px;}
 
 .submain h3{font-size: 24px;
-            margin:10px;}
+            padding-top:50px;}
 
 .submain ul li{float:none;
     padding:10px;
@@ -568,7 +569,7 @@ nav > ul > li{font-size: 16px;
                 width:100%;
                 transform: translateY(0);}
 
-.content4_text{margin: 40px auto;}
+.content4_text{margin: 60px auto;}
 
 .content4_text p{font-size: 20px;
                 text-align: center;
@@ -582,7 +583,11 @@ footer{ padding-top:0;}
 .box3{font-size:12px;
         width:80%;
         margin:20px auto;}
-.box5{font-size:14px;}
+.box5{font-size:12px;}
+
+.box5 > span{margin:0 auto;}
+
+select{display: none;}
 
 
 
