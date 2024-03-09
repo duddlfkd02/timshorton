@@ -104,7 +104,7 @@ nav > ul > li:hover .navicon img{opacity: 1;
 
 .main{width:50%;
         height:700px;
-        background-image: url(../image/images1/main.jpeg);
+        background-image: url("../image/images1/main.jpeg");
         background-size:cover;
         background-position: center;}
 
@@ -232,7 +232,7 @@ nav > ul > li:hover .navicon img{opacity: 1;
 
 .imgbox1{width:calc(100% / 3);
             height:500px;
-            background:url(../image/images1/event.jpeg) no-repeat;
+            background:url("../image/images1/event.jpeg") no-repeat;
             background-size:cover;
                 animation-delay: 0.3s;
                 visibility: hidden;
@@ -241,7 +241,7 @@ nav > ul > li:hover .navicon img{opacity: 1;
 
 .imgbox2{width:calc(100% / 3);
             height:500px;
-            background:url(../image/images1/store.jpeg) no-repeat;
+            background:url("../image/images1/store.jpeg") no-repeat;
             background-size:cover;
             background-position-x: 50%;
             animation-delay: 0.6s;
@@ -250,7 +250,7 @@ nav > ul > li:hover .navicon img{opacity: 1;
 
 .imgbox3{width:calc(100% / 3);
             height:500px;
-            background:url(../image/images1/goods.jpeg) no-repeat;
+            background:url("../image/images1/goods.jpeg") no-repeat;
             background-size:cover;
             animation-delay: 0.9s;
             visibility: hidden;
@@ -346,11 +346,11 @@ footer{width:100%;
         .main_text p{margin:0;}
 
         .more_btn{position: absolute;
-                        bottom:200px;
-                        right:18%;
-                        z-index: 1;
-                        animation-delay: 0.6s;
-                        cursor: pointer;}
+                bottom:200px;
+                right:18%;
+                z-index: 1;
+                animation-delay: 0.6s;
+                cursor: pointer;}
 
         .more_btn img{width:45px;
                         height:45px;}
@@ -359,33 +359,33 @@ footer{width:100%;
 
 /*----content1 best product 구간----*/
         
-.content1 h3{margin-top:40px;
-        font-size: 35px;}
+        .content1 h3{margin-top:40px;
+                font-size: 35px;}
 
-.content1_wrap{width:98%;
-                justify-content: center;
-                align-items: center;}
-
-
-.item:nth-child(1){margin-left:0;} 
-.item:nth-child(2){margin-top:0;} 
-.item:nth-child(3){margin-right:0;}
+        .content1_wrap{width:98%;
+                        justify-content: center;
+                        align-items: center;}
 
 
-.item{flex-wrap: wrap;}
+        .item:nth-child(1){margin-left:0;} 
+        .item:nth-child(2){margin-top:0;} 
+        .item:nth-child(3){margin-right:0;}
 
-.item_img{width:100%;
-        text-align: center;}
 
-.item_img img{width: 200px;}
-.item_text{margin-top:100px;}
+        .item{flex-wrap: wrap;}
 
-.item_text:nth-child(2){margin-top:0;}
+        .item_img{width:100%;
+                text-align: center;}
 
-.item_text p{font-size: 16px;
-                margin-top:50px;}
+        .item_img img{width: 200px;}
+        .item_text{margin-top:100px;}
 
-.item_text span{font-size: 14px;}
+        .item_text:nth-child(2){margin-top:0;}
+
+        .item_text p{font-size: 16px;
+                        margin-top:50px;}
+
+        .item_text span{font-size: 14px;}
 
 }/*1024구간 완료*/
 
@@ -495,28 +495,28 @@ footer{width:100%;
 
 /*------content2 구간-----*/
 
-.content2_wrap{width:100%;
-                height:900px;}
+        .content2_wrap{width:100%;
+                        height:900px;}
 
-.content2{width: 100%;
-        display: block;
-        text-align: center;}
+        .content2{width: 100%;
+                display: block;
+                text-align: center;}
 
-.text_wrap h3{font-size:32px;}
+        .text_wrap h3{font-size:32px;}
 
 
-.imgbox1,.imgbox2,.imgbox3{width:100%;
-                        height:300px;
-                        background-position: center;}
+        .imgbox1,.imgbox2,.imgbox3{width:100%;
+                                height:300px;
+                                background-position: center;}
 
 
 /*----footer 구간----*/
 
 
-.box2 ul{width:40%;}
-.box2 ul li{font-size:14px;}
-.box3{font-size:12px;}
-.box5{font-size:14px;}
+        .box2 ul{width:40%;}
+        .box2 ul li{font-size:14px;}
+        .box3{font-size:12px;}
+        .box5{font-size:14px;}
 
 
 }/*700구간 완료*/
@@ -627,34 +627,34 @@ footer{width:100%;
 
 /*------content2 구간-----*/
 
-.content2_wrap{width:100%;
-                height:900px;}
+        .content2_wrap{width:100%;
+                        height:900px;}
 
-.content2{width: 100%;
-        display: block;
-        text-align: center;}
+        .content2{width: 100%;
+                display: block;
+                text-align: center;}
 
-.text_wrap h3{font-size:30px;}
+        .text_wrap h3{font-size:30px;}
 
 
-.imgbox1,.imgbox2,.imgbox3{width:100%;
-                        height:300px;
-                        background-position: center;}
+        .imgbox1,.imgbox2,.imgbox3{width:100%;
+                                height:300px;
+                                background-position: center;}
 
 
 /*----footer----*/
-.box2 ul{width:70%;}
-.box2 ul li{font-size:14px;
-        padding:1px;}
-.box3{font-size:12px;
-        width:80%;
-        margin:20px auto;}
+        .box2 ul{width:70%;}
+        .box2 ul li{font-size:14px;
+                padding:1px;}
+        .box3{font-size:12px;
+                width:80%;
+                margin:20px auto;}
 
-.box5{font-size:12px;}
+        .box5{font-size:12px;}
 
-.box5 > span{margin:0 auto;}
+        .box5 > span{margin:0 auto;}
 
-select{display: none;}
+        select{display: none;}
 
 }/*699구간 완료*/
 

@@ -8,13 +8,6 @@ $(document).ready(function(){
     })
 
 
-
-
-    $(document).ready(function(){
-        var height = $(document).scrollTop();
-        console.log(height);
-    })
-
 /*----애니메이션 구간----*/
 
     $(document).on("scroll",function(){

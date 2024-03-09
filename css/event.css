@@ -27,24 +27,24 @@ header{width:100%;
     background-color: #c8102f;}
 
 .logo{width:10%;
-line-height: 80px;}
+    line-height: 80px;}
 
 .logo img{width:100%;
     margin-left:40px;}
 
 nav{width:50%;
-font-size: 18px;
-font-family: 'Mont', sans-serif;
-font-weight: 900;}
+    font-size: 18px;
+    font-family: 'Mont', sans-serif;
+    font-weight: 900;}
 
 nav > ul{width:100%;}
 
 nav > ul > li{position:relative;
-        float:left;
-        width:20%;
-        color: #ffffff;
-        text-align: center;
-        line-height: 80px;}
+                float:left;
+                width:20%;
+                color: #ffffff;
+                text-align: center;
+                line-height: 80px;}
 
 nav > ul > li:hover .navicon img{opacity: 1;
                             transition:0.4s;}
@@ -57,11 +57,11 @@ nav > ul > li:hover .navicon img{opacity: 1;
         opacity: 0;}
 
 .submenu{line-height: 35px;
-    height: 200px;
-    font-size:15px;
-    font-weight: 400;
-    background-color: #c8102f;
-    display: none;}
+        height: 200px;
+        font-size:15px;
+        font-weight: 400;
+        background-color: #c8102f;
+        display: none;}
 
 .submenu li{cursor: pointer;}
 
@@ -101,7 +101,7 @@ nav > ul > li:hover .navicon img{opacity: 1;
 
 .main{width:100%;
     height:500px;
-    background-image: url(../image/images5/main.png);
+    background-image: url("../image/images5/main.png");
     background-size: cover;
     background-position-y: 90%;}
 
@@ -163,9 +163,9 @@ nav > ul > li:hover .navicon img{opacity: 1;
 
 
 
-.image1{background-image: url(../image/images5/retropack.jpeg);}
-.image2{background-image: url(../image/images5/timspack.jpeg);}
-.image3{background-image: url(../image/images5/app_event.jpeg);}
+.image1{background-image: url("../image/images5/retropack.jpeg");}
+.image2{background-image: url("../image/images5/timspack.jpeg");}
+.image3{background-image: url("../image/images5/app_event.jpeg");}
 
 .content{width:100%;
         margin:100px auto;
@@ -224,7 +224,7 @@ footer{width:100%;
     justify-content: space-around;}
 
 .box3{width:100%;
-font-size: 14px;}
+    font-size: 14px;}
 
 .box4{margin:10px;}
 
@@ -322,22 +322,22 @@ font-size: 14px;}
 
 /*-----이벤트 콘텐츠 구간-----*/
 
-.content ul{width:96%;}
+    .content ul{width:96%;}
 
-.content ul li{float: left;
-    width:48%;
-    margin:10px auto;
-    margin-left:4%;}
+    .content ul li{float: left;
+        width:48%;
+        margin:10px auto;
+        margin-left:4%;}
 
-.content ul li:nth-child(2n+1){margin-left:0;}
+    .content ul li:nth-child(2n+1){margin-left:0;}
 
 
 /*----footer 구간----*/
 
-.box2 ul{width:40%;}
-.box2 ul li{font-size:14px;}
-.box3{font-size:12px;}
-.box5{font-size:14px;}
+    .box2 ul{width:40%;}
+    .box2 ul li{font-size:14px;}
+    .box3{font-size:12px;}
+    .box5{font-size:14px;}
 
 }/*1023-700구간 끝*/
 
@@ -388,17 +388,17 @@ font-size: 14px;}
 
 /*----content 구간----*/
 
-.content{margin:50px auto;}
+    .content{margin:50px auto;}
 
-.title h3{font-size:24px;}
-.title p{font-size: 16px;}
-.content ul{width:85%;
-    margin:0 auto;}
+    .title h3{font-size:24px;}
+    .title p{font-size: 16px;}
+    .content ul{width:85%;
+        margin:0 auto;}
 
-.content ul li{float: none;
-        width:100%;
-        margin-left:0;
-        margin:20px auto;}
+    .content ul li{float: none;
+            width:100%;
+            margin-left:0;
+            margin:20px auto;}
 
 /*----footer----*/
     .box2 ul{width:60%;}
@@ -412,12 +412,6 @@ font-size: 14px;}
     .box5 > span{margin:0 auto;}
     
     select{display: none;}
-
-
-
-
-
-
 
 
 }

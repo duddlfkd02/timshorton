@@ -18,7 +18,7 @@ a{text-decoration: none;
     margin:0 auto;}
 
 article{width:80%;
-                margin: 50px auto;}
+        margin: 50px auto;}
 
 article h1{text-align: center;
                 margin:50px auto;}
@@ -34,7 +34,7 @@ article h1 img{width:300px;}
                 align-items: center;}
 
 
-.finding_wrap button{width:200px;
+.finding_wrap > div{width:200px;
                 height:200px;
                 margin:0 30px;
                 text-align: center;
@@ -44,13 +44,14 @@ article h1 img{width:300px;}
                 border: none;
                 cursor: pointer;}
 
-.finding_wrap button h2{font-size: 25px;
-                    font-weight: 900;
-                    font-family: 'Mont', sans-serif;}
-.finding_wrap button:hover{background-color: #ffc8d1;
+.finding_wrap > div >  h2{margin-top:70px;
+                        font-size: 25px;
+                        font-weight: 900;
+                        font-family: 'Mont', sans-serif;}
+.finding_wrap > div:hover{background-color: #ffc8d1;
                         color:#c8102f;
                         transition:0.3s;}
-.finding_wrap button p{font-size: 16px;}
+.finding_wrap > div p{font-size: 16px;}
 
 
 .avatars{width:80%;

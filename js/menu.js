@@ -21,11 +21,6 @@ $(document).ready(function(){
             $("nav").removeAttr("style");
         }
     })
-
-
-
-
-
     /* ----영양정보 더보기 ----*/
     $('.info > div > ul > li > span').click(function(){
         if($(this).next(".sub_info").css("display") == "none"){
@@ -35,10 +30,9 @@ $(document).ready(function(){
             $(this).next(".sub_info").stop().slideUp(200);
             $(this).css({"transform":"rotate(135deg)"});
         }
-    
-
-
     });
+
+    /* ----애니메이션----*/
     $(document).on("scroll",function(){
         if($(document).scrollTop() > 836){ 
             $(".content3").addClass("animate__fadeInUp");
@@ -46,15 +40,6 @@ $(document).ready(function(){
         }
 
     })
-
-
-
-
-    $(document).scroll(function () {
-        var height = $(document).scrollTop();
-        console.log(height);
-    });
-
 
 
 

@@ -158,8 +158,11 @@ nav > ul > li:hover .navicon img{opacity: 1;
                 height:400px;
                 border-right:1px solid #ffd2da;
                 cursor: pointer;}
+
 .content1 ul li:hover{background-color: #ffffff;}
+
 .content1 ul li:hover:nth-child(1){background-color: #ffeef1;}
+
 .content1 ul li:last-child{border-right:none;}
 
 .content1 ul li img{max-width:100%;
@@ -287,7 +290,7 @@ footer{width:100%;
     justify-content: space-around;}
 
 .box3{width:100%;
-font-size: 14px;}
+    font-size: 14px;}
 
 .box4{margin:10px;}
 
@@ -295,14 +298,14 @@ font-size: 14px;}
     height:30px;}
 
 .box5{background-color: #E4D2A9;
-height: 40px;
-line-height: 40px;
-color:#c8102f;
-padding:0 20px;
-display: flex;
-justify-content: space-between;
-font-weight: 900;
-font-family: 'Mont', sans-serif;}
+        height: 40px;
+        line-height: 40px;
+        color:#c8102f;
+        padding:0 20px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 900;
+        font-family: 'Mont', sans-serif;}
 
 
 .site{width:110px;
@@ -344,29 +347,29 @@ font-family: 'Mont', sans-serif;}
 
 /*-----content1 구간 (스트로베리 시즌)-----*/
 
-.content1_title{margin-left:35px;}
+    .content1_title{margin-left:35px;}
 
-.content1_title h3{font-size:30px;
-                    line-height: 30px;}
+    .content1_title h3{font-size:30px;
+                        line-height: 30px;}
 
-.content1_title > p{letter-spacing: -2px;
-                        font-size: 16px;}
+    .content1_title > p{letter-spacing: -2px;
+                            font-size: 16px;}
 
-.content1 ul li img{margin: 30px 0;
-                    width:250px;}
+    .content1 ul li img{margin: 30px 0;
+                        width:250px;}
 
 
 /*-----content2 구간 (일반 메뉴)-----*/
 
-.content2_title2 ul{width:15%;
-                right: 0;}
+    .content2_title2 ul{width:15%;
+                    right: 0;}
 
-.content2 > ul > li > span:nth-child(1) {top: 15px;
-                                            left: 10px;
-                                            width: 60px;}
+    .content2 > ul > li > span:nth-child(1) {top: 15px;
+                                                left: 10px;
+                                                width: 60px;}
 
-.content2 ul li img{margin: 30px 0;
-                    width:250px;}
+    .content2 ul li img{margin: 30px 0;
+                        width:250px;}
 
 
 
@@ -375,116 +378,117 @@ font-family: 'Mont', sans-serif;}
 
 @media only screen and (max-width:1023px) and (min-width:700px){
 
-.burger{display: block;
-    z-index: 4;
-    position:absolute;
-    top:32px;
-    right:10px;} 
+    .burger{display: block;
+        z-index: 4;
+        position:absolute;
+        top:32px;
+        right:10px;} 
 
-header{display: block;}
+    header{display: block;}
 
 
-.logo{width:120px;}
-    
-nav{font-size: 14px;
-        width:100%;
-        display: none;}
-    
-nav > ul{width:100%;}
+    .logo{width:120px;}
+        
+    nav{font-size: 14px;
+            width:100%;
+            display: none;}
+        
+    nav > ul{width:100%;}
 
-nav > ul > li{font-size: 16px;
-                margin-left:0;
-                float:none;
-                width:100%;
-                color:#ffffff;
-                background-color: #c8102f;
-                text-align:center;
-                line-height: 50px;}
+    nav > ul > li{font-size: 16px;
+                    margin-left:0;
+                    float:none;
+                    width:100%;
+                    color:#ffffff;
+                    background-color: #c8102f;
+                    text-align:center;
+                    line-height: 50px;}
 
-.submenu{line-height: 30px;
-        height: auto;
-        font-size:12px;
-        font-weight: 400;
-        background-color: #c8102f;
-        display: none;}
+    .submenu{line-height: 30px;
+            height: auto;
+            font-size:12px;
+            font-weight: 400;
+            background-color: #c8102f;
+            display: none;}
 
-.submenu li{display: none;}
+    .submenu li{display: none;}
 
-.navicon{display: none;}
+    .navicon{display: none;}
 
-.menu_title{padding: 120px 20px 30px;}
+    .menu_title{padding: 120px 20px 30px;}
 
-.menu_title h2{font-size:28px;}
+    .menu_title h2{font-size:28px;}
 
-.menu_title ul{margin:20px auto;}
+    .menu_title ul{margin:20px auto;}
 
 
 
 /*-----content1 구간 (스트로베리 시즌)-----*/
 
-.content1_wrap{height:600px;}
+    .content1_wrap{height:600px;}
 
-.content1_title{margin: 60px 80px;}
+    .content1_title{margin: 60px 80px;}
 
-.content1_title h3{font-size:35px;
-                    line-height: 34px;
-                    padding-top: 40px;}
+    .content1_title h3{font-size:35px;
+                        line-height: 34px;
+                        padding-top: 40px;}
 
-.content1_title > p{letter-spacing: -2px;
-                        font-size: 16px;}
-
-
-
-.content1 ul{width:100%;
-            margin:0 auto;}
+    .content1_title > p{letter-spacing: -2px;
+                            font-size: 16px;}
 
 
-.content1 ul li{float:left;
-                width:50%;
-                margin:0 auto;
-                height:300px;
-                border-top:1px solid #ffd2da;}
 
-.content1 ul li:nth-child(1),
-.content1 ul li:nth-child(2){border-top:none;}    
-.content1 ul li:nth-child(2){border-right:none;} 
-.content1 ul li img{margin:0;
-                    width:200px;}
+    .content1 ul{width:100%;
+                margin:0 auto;}
 
-.content1 ul li img{margin:10px 0;}
+
+    .content1 ul li{float:left;
+                    width:50%;
+                    margin:0 auto;
+                    height:300px;
+                    border-top:1px solid #ffd2da;}
+
+    .content1 ul li:nth-child(1),
+    .content1 ul li:nth-child(2){border-top:none;}    
+    .content1 ul li:nth-child(2){border-right:none;} 
+    .content1 ul li img{margin:0;
+                        width:200px;}
+
+    .content1 ul li img{margin:10px 0;}
 
 
 /*-----content2 구간 (일반 메뉴)-----*/
 
-.content2_title2 ul{width:20%;
-                    right: 0;}
+    .content2_title2 ul{width:20%;
+                        right: 0;}
 
-.content2 ul li{float:left;
-                width:50%;
-                margin:0 auto;
-                height:300px;}
+    .content2 ul li{float:left;
+                    width:50%;
+                    margin:0 auto;
+                    height:300px;}
 
 
 
-.content2 > ul > li > span:nth-child(1) {top: 20px;
-                                left: 15px;
-                                width: 50px;
-                                height:25px;
-                                padding:0;
-                                line-height: 28px;
-                                font-size:14px;}
+    .content2 > ul > li > span:nth-child(1) {top: 20px;
+                                    left: 15px;
+                                    width: 50px;
+                                    height:25px;
+                                    padding:0;
+                                    line-height: 28px;
+                                    font-size:14px;}
 
-.content2 ul li img{margin: 10px 0;
-                    width:200px;}
-.content2 ul li:nth-child(2n+1){border-left:none;}
+    .content2 ul li img{margin: 10px 0;
+                        width:200px;}
+
+    .content2 ul li:nth-child(2n+1){border-left:none;}
 
 
 /*----footer 구간----*/
 
-.box2 ul{width:40%;}
-.box2 ul li{font-size:14px;}
-.box3{font-size:12px;}
-.box5{font-size:14px;}
+    .box2 ul{width:40%;}
+    .box2 ul li{font-size:14px;}
+    .box3{font-size:12px;}
+    .box5{font-size:14px;}
 
 
 }/*1023-700구간 끝*/
@@ -540,74 +544,74 @@ nav > ul > li{font-size: 16px;
 
 /*-----content1 구간 (스트로베리 시즌)-----*/
 
-.content1_wrap{height:auto;}
+    .content1_wrap{height:auto;}
 
-.content1_title{margin: 20px 80px;
-                text-align: center;}
+    .content1_title{margin: 20px 80px;
+                    text-align: center;}
 
-.content1_title h3{font-size:28px;
-                    line-height: 30px;
-                    padding: 20px;}
+    .content1_title h3{font-size:28px;
+                        line-height: 30px;
+                        padding: 20px;}
 
-.content1_title > p{letter-spacing: -2px;
-                        font-size: 16px;
-                        display: inline-block;}
+    .content1_title > p{letter-spacing: -2px;
+                            font-size: 16px;
+                            display: inline-block;}
 
 
 
-.content1 ul{width:100%;
-            margin:0 auto;}
+    .content1 ul{width:100%;
+                margin:0 auto;}
 
-.content1 ul li{float:none;
-                width:100%;
-                margin:0 auto;
-                padding:20px;
-                height:auto;
-                border:none;}
+    .content1 ul li{float:none;
+                    width:100%;
+                    margin:0 auto;
+                    padding:20px;
+                    height:auto;
+                    border:none;}
 
-.content1 ul li img{width:220px;
-                    margin:0 auto;}
+    .content1 ul li img{width:220px;
+                        margin:0 auto;}
 
-.content1 ul li:nth-child(1){padding:0;}
+    .content1 ul li:nth-child(1){padding:0;}
 
 
 
 /*----content2 구간 (일반 메뉴)----*/
-.content2_title2 h3{font-size:24px;}
+    .content2_title2 h3{font-size:24px;}
 
-.content2_title2 ul{width:30%;
-                    right:0;
-                    justify-content: space-around;}
+    .content2_title2 ul{width:30%;
+                        right:0;
+                        justify-content: space-around;}
 
-.content2 ul li{float:none;
-                width:100%;
-                height:300px;}
+    .content2 ul li{float:none;
+                    width:100%;
+                    height:300px;}
 
-.content2 > ul > li > span:nth-child(1) {top: 25px;
-                                        left: 30px;
-                                        width: 50px;
-                                        height:25px;
-                                        padding:0;
-                                        line-height: 28px;
-                                        font-size:14px;}
+    .content2 > ul > li > span:nth-child(1) {top: 25px;
+                                            left: 30px;
+                                            width: 50px;
+                                            height:25px;
+                                            padding:0;
+                                            line-height: 28px;
+                                            font-size:14px;}
 
-.content2 ul li img{margin:0;
-                width:220px;}
+    .content2 ul li img{margin:0;
+                    width:220px;}
 
 
 
-/*----footer 구간----*/
+    /*----footer 구간----*/
 
-.box2 ul{width:60%;}
-.box2 ul li{font-size:14px;
-        padding:1px;}
-.box3{font-size:12px;
-        width:80%;
-        margin:20px auto;}
+    .box2 ul{width:60%;}
+    .box2 ul li{font-size:14px;
+            padding:1px;}
+    .box3{font-size:12px;
+            width:80%;
+            margin:20px auto;}
 
-.box5{font-size:12px;}
+    .box5{font-size:12px;}
 
-.box5 > span{margin:0 auto;}
+    .box5 > span{margin:0 auto;}
 
-select{display: none;}
+    select{display: none;}
 }

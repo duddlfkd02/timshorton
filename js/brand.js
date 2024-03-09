@@ -8,12 +8,6 @@ $(document).ready(function(){
         $('.submenu').stop().slideUp(200);
     })
 
-
-    $(document).ready(function(){
-        var height = $(document).scrollTop();
-        console.log(height);
-    })
-
     /*----메인 이미지 페이드인, 아웃 구간----*/
     setInterval(function(){
         $('.main').animate({"opacity":"0"},2000,function(){
