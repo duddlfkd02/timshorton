@@ -1,108 +1,147 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.cdnfonts.com/css/mont');
 
-*{margin:0; padding:0;
+* {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-body{background-color:#FAF4E7;
-    color:#000000;
-    font-family: 'Noto Sans KR', sans-serif;}
+body {
+    background-color: #FAF4E7;
+    color: #000000;
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
-a{text-decoration: none;
-    color:inherit;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
-.wrap{width:100%;
-    margin:100px auto;}
+.wrap {
+    width: 100%;
+    margin: 100px auto;
+}
 
-.logo{width:80%;
-    margin:0 auto;
-    text-align: center;}    
+.logo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
 
-.logo img{width:250px;
-            margin:30px auto;}
+.logo img {
+    width: 250px;
+    margin: 30px auto;
+}
 
 /*----로그인 기입----*/
-form{width:50%;
-    margin:0 auto;}
+form {
+    width: 50%;
+    margin: 0 auto;
+}
 
-fieldset{width:100%;
-        margin:0 auto;
-        border:0;}
+fieldset {
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+}
 
-fieldset p{width: 50%;
-            margin: 0 auto;}
+fieldset p {
+    width: 50%;
+    margin: 0 auto;
+}
 
-fieldset p label{font-size: 14px;
-                padding-bottom:5px;}
+fieldset p label {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
 
-fieldset h3{width:50%;
-            margin: 10px auto;
-            color:#c8102f;
-            font-size: 28px;
-            font-weight: 900;
-            font-family: 'Mont', sans-serif;}
+fieldset h3 {
+    width: 50%;
+    margin: 10px auto;
+    color: #c8102f;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Mont', sans-serif;
+}
 
-#id, #password{width:100%;
-                    height:50px;
-                    margin:5px 0;
-                    border-radius: 2px;
-                    border:none;}
-                    
-input{padding:8px;}
+#id,
+#password {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 2px;
+    border: none;
+}
+
+input {
+    padding: 8px;
+}
 
 
 
 
 /*----버튼----*/
 
-.btn{width:50%;
+.btn {
+    width: 50%;
     text-align: center;
-    margin:30px auto;}
+    margin: 30px auto;
+}
 
-#login{display:inline-block;
-        width:100%;
-        height:50px;
-        border:none;
-        border-radius: 30px;
-        color:#ffffff;
-        background-color: #c8102f;
-        font-size:18px;
-        font-weight: 900;
-        font-family: 'Mont', sans-serif;
-        cursor: pointer;}
+#login {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #c8102f;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Mont', sans-serif;
+    cursor: pointer;
+}
 
-#login:hover{background-color: #ffc8d1;
-            color:#c8102f;
-            transition: 0.3s;}
+#login:hover {
+    background-color: #ffc8d1;
+    color: #c8102f;
+    transition: 0.3s;
+}
 
 /*아이디저장 체크박스 커스텀*/
 
 
-input[type="checkbox"]{
-    accent-color:#c8102f;}
+input[type="checkbox"] {
+    accent-color: #c8102f;
+}
 
 /*----아이디, 비밀번호 찾기----*/
 
-.find_wrap{width:50%;
+.find_wrap {
+    width: 50%;
     text-align: center;
-    margin:30px auto;}
+    margin: 30px auto;
+}
 
 
-.finding{display:inline-block;
-        width:50%;
-        height:50px;
-        margin:0 auto;
-        font-size: 14px;
-        background-color: transparent;
-        color:#333333;
-        border:none;
-        cursor: pointer;}
+.finding {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: transparent;
+    color: #333333;
+    border: none;
+    cursor: pointer;
+}
 
 
-.find_wrap div{width:50%;
-                margin: 0 auto;
-                color:#333333;
-                font-size: 14px;}
+.find_wrap div {
+    width: 50%;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 14px;
+}

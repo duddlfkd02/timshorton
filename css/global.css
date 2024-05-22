@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+:root {
+    /* Colors */
+    --color-accent: #c8102f;
+    --color-accent2: #E4D2A9;
+    --color-sub1: #FFC648;
+    --color-gray1: #DDDDDD;
+    --color-Black: #000000;
+    --color-White: #FFFFFF;
+}
+
+
+/* 로컬 폰트 정의 */
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 800;
+    font-display: swap;
+    src: local('Noto Sans KR Bold'),
+        url(../font/NotoSansKR-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    font-display: swap;
+    src: local('Noto Sans KR Medium'),
+        url(../font/NotoSansKR-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-display: swap;
+    src: local('Noto Sans KR Regular'),
+        url(../font/NotoSansKR-Regular.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'Mont';
+    font-weight: 400;
+    font-display: swap;
+    src: local('Mont Bold'),
+        url(../font/Mont-HeavyDEMO.woff) format('woff');
+}
