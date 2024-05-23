@@ -9,7 +9,7 @@
 
 body {
     background-color: #FAF4E7;
-    color: #000000;
+    color: var(--color-Black);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -54,8 +54,8 @@ article h1 img {
     height: 200px;
     margin: 0 30px;
     text-align: center;
-    color: #ffffff;
-    background-color: #c8102f;
+    color: var(--color-White);
+    background-color: var(--color-accent);
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -69,8 +69,8 @@ article h1 img {
 }
 
 .finding_wrap>div:hover {
-    background-color: #ffc8d1;
-    color: #c8102f;
+    background-color: var(--color-sub2);
+    color: var(--color-accent);
     transition: 0.3s;
 }
 

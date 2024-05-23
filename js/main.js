@@ -1,11 +1,20 @@
 $(document).ready(function () {
-    $('nav > ul > li').on('mouseover', function () {
+    $('.menu > .mainmenu > .mainmenu_inner').on('mouseover', function () {
         $('.submenu').stop().slideDown(200);
+
+        if ($(window).width() < 1024) {
+            $('.submenu, .submenu_inner').css({ 'display': 'none' });
+        }
     })
 
-    $('nav > ul > li').on('mouseout', function () {
+    $('.menu > .mainmenu > .mainmenu_inner').on('mouseout', function () {
         $('.submenu').stop().slideUp(200);
+
+        if ($(window).width() > 1023) {
+            $('.submenu, .submenu_inner').css({ 'display': 'block' });
+        }
     })
+
 
 
     /*----애니메이션 구간----*/
@@ -26,31 +35,30 @@ $(document).ready(function () {
 
     $('.burger').click(function () {
         $(this).toggleClass('active');
-        $('nav').slideToggle(500);
+        $('.menu').slideToggle(500);
+
     });
 
     $(window).resize(function () {
         let wWidth = $(window).width();
 
         if (wWidth > 699) {
-            $("nav").removeAttr("style");
+            $('.menu').removeAttr("style");
         }
+
     })
 
 
 
-
+    // 스크롤 시 메뉴바 색상 추가
     $(window).scroll(function () {
         let scrollV = $(document).scrollTop();
 
         if (scrollV > 700) {
-            $('nav').css("background-color", "#c8102f"), $('header').css("background-color", "#ffffff");
+            $('.menu').css("background-color", "#c8102f"), $('header').css("background-color", "#ffffff");
+        } else {
+            $('.menu').css("background-color", "transparent"), $('header').css("background-color", "transparent");
         }
-
-        if (scrollV < 700) {
-            $('nav').css("background-color", "transparent"), $('header').css("background-color", "transparent");
-        }
-
     })
 
 

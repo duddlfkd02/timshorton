@@ -84,11 +84,12 @@ header {
         height: 200px;
         font-size: 15px;
         font-weight: 400;
-        background-color: #c8102f;
+        background-color: var(--color-accent);
         display: none;
 }
 
 .submenu .submenu_inner {
+        padding: 6px;
         cursor: pointer;
 }
 
@@ -106,7 +107,7 @@ header {
         width: 100%;
         height: 3px;
         border-radius: 2px;
-        background-color: #ffffff;
+        background-color: var(--color-White);
         left: 0;
         transition: 0.2s;
 }
@@ -143,7 +144,7 @@ header {
         width: 100%;
         height: 700px;
         position: relative;
-        background-color: #c8102f;
+        background-color: var(--color-accent);
 }
 
 .main {
@@ -171,7 +172,7 @@ header {
 .main_text {
         position: absolute;
         top: 250px;
-        right: 15%;
+        right: 10%;
         letter-spacing: -1px;
         z-index: 1;
 }
@@ -180,21 +181,21 @@ header {
         font-size: 60px;
         font-family: 'Mont', sans-serif;
         font-weight: 900;
-        color: #ffffff;
+        color: var(--color-White);
         animation-delay: 0.3s;
 }
 
 .main_text p {
         margin: 5px;
         font-weight: 500;
-        color: #E4D2A9;
+        color: var(--color-accent2);
         animation-delay: 0.6s;
 }
 
 .more_btn {
         position: absolute;
         bottom: 160px;
-        right: 26%;
+        right: 24%;
         z-index: 1;
         animation-delay: 0.6s;
         cursor: pointer;
@@ -209,7 +210,7 @@ header {
         font-family: 'Mont', sans-serif;
         font-weight: 900;
         font-size: 20px;
-        color: #E4D2A9;
+        color: var(--color-accent2);
 }
 
 /*------content1 best product 구간-----*/
@@ -225,7 +226,8 @@ header {
         margin-top: 80px;
         font-weight: 900;
         font-family: 'Mont', sans-serif;
-        color: #c8102f;
+        color: var(--color-accent);
+        ;
         text-align: center;
         font-size: 35px;
 }
@@ -271,7 +273,8 @@ header {
 }
 
 .item_text p {
-        color: #c8102f;
+        color: var(--color-accent);
+        ;
         font-weight: 600;
         font-size: 18px;
 }
@@ -332,7 +335,7 @@ header {
 }
 
 .text_wrap {
-        color: #ffffff;
+        color: var(--color-White);
 }
 
 .text_wrap h3 {
@@ -380,11 +383,11 @@ header {
 
 footer {
         width: 100%;
-        background-color: #c8102f;
+        background-color: var(--color-accent);
         padding-top: 20px;
         margin: 0 auto;
         text-align: center;
-        color: #ffffff;
+        color: var(--color-White);
 }
 
 .box1 img {
@@ -414,10 +417,11 @@ footer {
 }
 
 .box5 {
-        background-color: #E4D2A9;
+        background-color: var(--color-accent2);
         height: 40px;
         line-height: 40px;
-        color: #c8102f;
+        color: var(--color-accent);
+        ;
         padding: 0 20px;
         display: flex;
         justify-content: space-between;
@@ -432,10 +436,10 @@ footer {
         text-align: center;
         appearance: none;
         background-size: 15px;
-        border: 1px solid #c8102f;
+        border: 1px solid var(--color-accent);
         border-radius: 5px;
-        background-color: #E4D2A9;
-        color: #c8102f;
+        background-color: var(--color-accent2);
+        color: var(--color-accent);
         font-weight: 900;
         font-family: 'Mont', sans-serif;
         cursor: pointer;
@@ -447,8 +451,9 @@ footer {
 .site option {
         appearance: none;
         outline: none;
-        background: #E4D2A9;
-        color: #c8102f;
+        background: var(--color-accent2);
+        color: var(--color-accent);
+        ;
         border: none;
         font-weight: 900;
         font-family: 'Mont', sans-serif;
@@ -467,7 +472,7 @@ footer {
                 right: 8%;
         }
 
-        .submenu li {
+        .submenu .submenu_inner {
                 font-size: 14px;
         }
 
@@ -584,8 +589,8 @@ footer {
                 display: block;
                 z-index: 4;
                 position: absolute;
-                top: 32px;
-                right: 10px;
+                top: 30px;
+                right: 16px;
         }
 
         header {
@@ -597,39 +602,22 @@ footer {
                 width: 120px;
         }
 
-        nav {
+        .menu {
                 font-size: 14px;
                 width: 100%;
+                margin-top: 30px;
                 display: none;
         }
 
-        nav>ul {
+        .menu .mainmenu .mainmenu_inner {
                 width: 100%;
-        }
-
-        nav>ul>li {
-                font-size: 16px;
-                margin-left: 0;
                 float: none;
-                width: 100%;
-                color: #ffffff;
-                background-color: #c8102f;
+                font-size: 16px;
+                color: var(--color-White);
+                background-color: var(--color-accent);
                 text-align: center;
-                line-height: 50px;
         }
 
-        .submenu {
-                line-height: 30px;
-                height: auto;
-                font-size: 12px;
-                font-weight: 400;
-                background-color: #c8102f;
-                display: none;
-        }
-
-        .submenu li {
-                display: none;
-        }
 
         .navicon {
                 display: none;
@@ -784,13 +772,12 @@ footer {
 
 @media only screen and (max-width:699px) {
 
-
         .burger {
                 display: block;
                 z-index: 4;
                 position: absolute;
-                top: 32px;
-                right: 10px;
+                top: 30px;
+                right: 16px;
         }
 
         header {
@@ -802,44 +789,25 @@ footer {
                 width: 120px;
         }
 
-        nav {
+        .menu {
                 font-size: 14px;
                 width: 100%;
+                margin-top: 30px;
                 display: none;
         }
 
-        nav>ul {
+        .menu .mainmenu .mainmenu_inner {
                 width: 100%;
-        }
-
-        nav>ul>li {
-                font-size: 16px;
-                margin-left: 0;
                 float: none;
-                width: 100%;
-                color: #ffffff;
-                background-color: #c8102f;
+                font-size: 16px;
+                color: var(--color-White);
+                background-color: var(--color-accent);
                 text-align: center;
-                line-height: 50px;
-        }
-
-        .submenu {
-                line-height: 30px;
-                height: auto;
-                font-size: 12px;
-                font-weight: 400;
-                background-color: #c8102f;
-                display: none;
-        }
-
-        .submenu li {
-                display: none;
         }
 
         .navicon {
                 display: none;
         }
-
 
         /*----main 구간----*/
 

@@ -89,6 +89,7 @@ header {
 }
 
 .submenu .submenu_inner {
+    padding: 6px;
     cursor: pointer;
 }
 
@@ -503,7 +504,7 @@ footer {
         right: 8%;
     }
 
-    .submenu li {
+    .submenu .submenu_inner {
         font-size: 14px;
     }
 
@@ -592,8 +593,8 @@ footer {
         display: block;
         z-index: 4;
         position: absolute;
-        top: 32px;
-        right: 10px;
+        top: 30px;
+        right: 16px;
     }
 
     header {
@@ -605,39 +606,22 @@ footer {
         width: 120px;
     }
 
-    nav {
+    .menu {
         font-size: 14px;
         width: 100%;
+        margin-top: 30px;
         display: none;
     }
 
-    nav>ul {
+    .menu .mainmenu .mainmenu_inner {
         width: 100%;
-    }
-
-    nav>ul>li {
-        font-size: 16px;
-        margin-left: 0;
         float: none;
-        width: 100%;
-        color: #ffffff;
-        background-color: #c8102f;
+        font-size: 16px;
+        color: var(--color-White);
+        background-color: var(--color-accent);
         text-align: center;
-        line-height: 50px;
     }
 
-    .submenu {
-        line-height: 30px;
-        height: auto;
-        font-size: 12px;
-        font-weight: 400;
-        background-color: #c8102f;
-        display: none;
-    }
-
-    .submenu li {
-        display: none;
-    }
 
     .navicon {
         display: none;
@@ -798,8 +782,8 @@ footer {
         display: block;
         z-index: 4;
         position: absolute;
-        top: 32px;
-        right: 10px;
+        top: 30px;
+        right: 16px;
     }
 
     header {
@@ -811,38 +795,20 @@ footer {
         width: 120px;
     }
 
-    nav {
+    .menu {
         font-size: 14px;
         width: 100%;
+        margin-top: 30px;
         display: none;
     }
 
-    nav>ul {
+    .menu .mainmenu .mainmenu_inner {
         width: 100%;
-    }
-
-    nav>ul>li {
-        font-size: 16px;
-        margin-left: 0;
         float: none;
-        width: 100%;
-        color: #ffffff;
-        background-color: #c8102f;
+        font-size: 16px;
+        color: var(--color-White);
+        background-color: var(--color-accent);
         text-align: center;
-        line-height: 50px;
-    }
-
-    .submenu {
-        line-height: 30px;
-        height: auto;
-        font-size: 12px;
-        font-weight: 400;
-        background-color: #c8102f;
-        display: none;
-    }
-
-    .submenu li {
-        display: none;
     }
 
     .navicon {

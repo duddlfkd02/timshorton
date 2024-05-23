@@ -9,7 +9,7 @@
 
 body {
     background-color: #FAF4E7;
-    color: #000000;
+    color: var(--color-Black);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -60,7 +60,7 @@ fieldset p label {
 fieldset h3 {
     width: 50%;
     margin: 10px auto;
-    color: #c8102f;
+    color: var(--color-accent);
     font-size: 28px;
     font-weight: 900;
     font-family: 'Mont', sans-serif;
@@ -96,8 +96,8 @@ input {
     height: 50px;
     border: none;
     border-radius: 30px;
-    color: #ffffff;
-    background-color: #c8102f;
+    color: var(--color-White);
+    background-color: var(--color-accent);
     font-size: 18px;
     font-weight: 900;
     font-family: 'Mont', sans-serif;
@@ -105,8 +105,8 @@ input {
 }
 
 #login:hover {
-    background-color: #ffc8d1;
-    color: #c8102f;
+    background-color: var(--color-sub2);
+    color: var(--color-accent);
     transition: 0.3s;
 }
 
@@ -114,7 +114,7 @@ input {
 
 
 input[type="checkbox"] {
-    accent-color: #c8102f;
+    accent-color: var(--color-accent);
 }
 
 /*----아이디, 비밀번호 찾기----*/
