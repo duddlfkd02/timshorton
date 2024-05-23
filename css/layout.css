@@ -141,9 +141,6 @@ header {
 /* * main * */
 
 .main_wrap {
-        width: 100%;
-        height: 700px;
-        position: relative;
         background-color: var(--color-accent);
 }
 
@@ -157,10 +154,9 @@ header {
 
 
 .product_img {
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        margin-left: -250px;
+        position: relative;
+        top: 20%;
+        left: 70%;
         width: 500px;
         z-index: 1;
 }
@@ -171,8 +167,8 @@ header {
 
 .main_text {
         position: absolute;
-        top: 250px;
-        right: 10%;
+        top: 30%;
+        right: 8%;
         letter-spacing: -1px;
         z-index: 1;
 }
@@ -180,7 +176,6 @@ header {
 .main_text h2 {
         font-size: 60px;
         font-family: 'Mont', sans-serif;
-        font-weight: 900;
         color: var(--color-White);
         animation-delay: 0.3s;
 }
@@ -194,23 +189,31 @@ header {
 
 .more_btn {
         position: absolute;
-        bottom: 160px;
-        right: 24%;
+        right: 22%;
+        font-family: 'Mont', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        color: var(--color-accent2);
         z-index: 1;
         animation-delay: 0.6s;
         cursor: pointer;
 }
 
-.more_btn img {
-        width: 50px;
-        height: 50px;
+.more_btn>a {
+        display: flex;
+        align-items: center;
+
 }
 
-.more_btn span {
-        font-family: 'Mont', sans-serif;
-        font-weight: 900;
-        font-size: 20px;
-        color: var(--color-accent2);
+.btn_icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+}
+
+
+.btn_icon img {
+        width: 100%;
 }
 
 /*------content1 best product 구간-----*/
@@ -480,14 +483,17 @@ footer {
         /*----main 구간----*/
 
         .product_img {
-                margin-left: -200px;
-                width: 400px;
+                position: relative;
+                left: 55%;
+                width: 450px;
+                z-index: 1;
         }
 
         .main_text {
                 position: absolute;
-                top: 250px;
-                right: 3%;
+                right: 5%;
+                letter-spacing: -1px;
+                z-index: 1;
         }
 
         .main_text h2 {
@@ -499,22 +505,10 @@ footer {
         }
 
         .more_btn {
-                position: absolute;
-                bottom: 200px;
                 right: 18%;
-                z-index: 1;
-                animation-delay: 0.6s;
-                cursor: pointer;
         }
 
-        .more_btn img {
-                width: 45px;
-                height: 45px;
-        }
 
-        .more_btn span {
-                font-size: 18px;
-        }
 
         /*----content1 best product 구간----*/
 
@@ -626,16 +620,16 @@ footer {
         /*----main 구간----*/
 
         .product_img {
-                margin-left: -150px;
-                margin-top: 280px;
-                width: 320px;
+                left: 55%;
+                top: 44%;
+                width: 400px;
         }
 
         .main_text {
-                position: absolute;
-                top: 180px;
+                top: 24%;
                 right: 3%;
         }
+
 
         .main_text h2 {
                 font-size: 45px;
@@ -646,18 +640,7 @@ footer {
         }
 
         .more_btn {
-                position: absolute;
-                bottom: 290px;
-                right: 26%;
-        }
-
-        .more_btn img {
-                width: 45px;
-                height: 45px;
-        }
-
-        .more_btn span {
-                font-size: 18px;
+                right: 18%;
         }
 
 
@@ -812,40 +795,31 @@ footer {
         /*----main 구간----*/
 
         .product_img {
-                margin-left: -150px;
-                margin-top: 280px;
-                width: 320px;
+                left: 30%;
+                top: 50%;
+                width: 350px;
         }
 
         .main_text {
-                position: absolute;
-                width: 180px;
-                top: 200px;
-                right: 1%;
+                top: 24%;
+                right: 5%;
         }
 
+
         .main_text h2 {
-                font-size: 30px;
+                font-size: 32px;
         }
 
         .main_text p {
+                width: 150px;
                 margin: 0;
-                font-size: 13px;
+                font-size: 14px;
         }
 
         .more_btn {
-                position: absolute;
-                bottom: 300px;
-                right: 20%;
-        }
-
-        .more_btn img {
-                width: 35px;
-                height: 35px;
-        }
-
-        .more_btn span {
-                font-size: 16px;
+                margin-top: 20px;
+                right: 12%;
+                font-size: 18px;
         }
 
 
